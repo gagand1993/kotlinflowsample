@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 //jaskirat
+//gagan
         viewModel=ViewModelProvider(this, CommonViewModelFactory(this))[CommonViewModel::class.java]
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.CREATED) {
